@@ -93,7 +93,7 @@ def get_variables_v15(file_stream):
 # --- 5. GIAO DIỆN LOGIN ---
 def login():
     if st.session_state['auth']: return True
-    st.title("🔐 Hệ thống mrspytro 1992")
+    st.title("🔐 Hệ thống Auto_Form")
     pwd = st.text_input("Mật khẩu", type="password")
     if st.button("Đăng nhập"):
         if pwd == "phi1992":
@@ -171,3 +171,4 @@ if login():
             except Exception as e: st.error(f"Lỗi: {e}")
     else:
         st.info("👈 Hãy chọn mẫu từ thanh bên trái để bắt đầu.")
+
